@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Crie legendas para Instagram com inteligência artificial.">
+  <title>LegendaPro — Legendas que conectam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="#topo" class="logo">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M13 2 3 14h7l-1 8 11-13h-7l1-7Z" fill="currentColor"/></svg>
+        </span>
+        <span class="logo-text">LegendaPro<small>Legendas que conectam</small></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#topo">Início</a>
+        <a href="#estilos">Recursos</a>
+        <a href="#planos">Planos</a>
+        <a href="#como-funciona">Como funciona</a>
+      </nav>
+      <a href="#gerador" class="btn-nav">Acessar Agora</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="topo">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Gerador de legendas IA</span>
+          <h1>Transforme suas ideias em legendas que <span class="grad">engajam</span> e <span class="grad">convertem!</span></h1>
+          <p>O LegendaPro é o gerador de legendas com inteligência artificial feito para criadores de conteúdo, negócios e marcas que querem mais alcance, engajamento e resultados no Instagram.</p>
+
+          <ul class="hero-bullets">
+            <li><svg viewBox="0 0 24 24" width="16" height="16"><path d="M13 2 3 14h7l-1 8 11-13h-7l1-7Z" fill="currentColor"/></svg>Rápido e fácil de usar</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="2"/></svg>Diversos estilos e objetivos</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16"><rect x="4" y="4" width="16" height="16" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>Legendas para o Instagram</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16"><path d="m12 3 7 3v5c0 5-3.2 7.9-7 9-3.8-1.1-7-4-7-9V6l7-3Z" fill="none" stroke="currentColor" stroke-width="2"/></svg>Sua chave fica só no seu servidor</li>
+          </ul>
+
+          <div class="hero-cta">
+            <a href="#gerador" class="btn-primary big">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path d="M13 2 3 14h7l-1 8 11-13h-7l1-7Z" fill="currentColor"/></svg>
+              Comece Agora — É Grátis
+            </a>
+            <span class="cta-note">✓ Não precisa de cartão de crédito</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="phone-photo"></div>
+            <div class="phone-actions">♡ &nbsp; ⤴</div>
+            <div class="phone-caption-line"></div>
+            <div class="phone-caption-line short"></div>
+          </div>
+          <div class="float-card float-1"><span>♥</span>Mais engajamento</div>
+          <div class="float-card float-2"><span>↗</span>Mais alcance</div>
+          <div class="float-card float-3"><span>◎</span>Mais seguidores</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="workspace" id="gerador">
+      <div class="workspace-inner">
+
+        <form id="generatorForm" class="card form-card">
+          <h2>Preencha o formulário e receba sua legenda em segundos!</h2>
+
+          <label for="tema">Sobre o que é sua postagem?</label>
+          <textarea id="tema" name="tema" rows="3" required placeholder="Ex.: Loja de roupas femininas, lançamento da coleção de verão..."></textarea>
+
+          <label>Objetivo da postagem</label>
+          <div class="chip-group" data-target="objetivo">
+            <button type="button" class="chip active" data-value="Vender">🛒 Vender</button>
+            <button type="button" class="chip" data-value="Gerar comentários">💬 Engajar</button>
+            <button type="button" class="chip" data-value="Informar / ensinar">📘 Informar</button>
+            <button type="button" class="chip" data-value="Ganhar seguidores">👤 Ganhar seguidores</button>
+            <button type="button" class="chip" data-value="Divulgar um Reels">▶ Reels</button>
+          </div>
+          <input type="hidden" id="objetivo" value="Vender">
+
+          <label for="publico">Público-alvo</label>
+          <input id="publico" placeholder="Ex.: Mulheres de 25 a 45 anos...">
+
+          <label>Estilo da legenda</label>
+          <div class="chip-group" data-target="estilo">
+            <button type="button" class="chip active" data-value="Persuasivo">🔥 Persuasivo</button>
+            <button type="button" class="chip" data-value="Descontraído">🙂 Descontraído</button>
+            <button type="button" class="chip" data-value="Profissional">🎓 Profissional</button>
+          </div>
+          <input type="hidden" id="estilo" value="Persuasivo">
+
+          <button class="btn-primary full" id="generateBtn" type="submit">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M13 2 3 14h7l-1 8 11-13h-7l1-7Z" fill="currentColor"/></svg>
+            Gerar Legenda
+          </button>
+          <p class="privacy">Sua chave de API fica no servidor e não é enviada ao navegador.</p>
+        </form>
+
+        <div class="side-col">
+          <section class="card result-card" aria-live="polite">
+            <div class="result-head">
+              <div><span class="result-icon">✍️</span><h3>Sua legenda</h3></div>
+              <button class="copy" id="copyBtn" type="button" disabled>Copiar</button>
+            </div>
+            <div id="result" class="result-placeholder">
+              <strong>Sua legenda aparecerá aqui</strong>
+              <p>Preencha o formulário e clique em "Gerar Legenda".</p>
+            </div>
+          </section>
+
+          <section class="steps-card" id="como-funciona">
+            <span class="eyebrow dark">Como funciona</span>
+            <h3>Em 3 passos, sua legenda está pronta!</h3>
+            <ol class="steps">
+              <li><span class="step-n">1</span><div><b>Informe os detalhes</b><p>Conte sobre sua postagem, público, objetivo e estilo.</p></div></li>
+              <li><span class="step-n">2</span><div><b>Nossa IA trabalha por você</b><p>O LegendaPro analisa tudo e gera legendas incríveis em segundos.</p></div></li>
+              <li><span class="step-n">3</span><div><b>Copie e publique</b><p>Escolha sua legenda favorita, copie e publique no Instagram.</p></div></li>
+            </ol>
+          </section>
+        </div>
+      </div>
+
+      <div class="styles-grid" id="estilos">
+        <h3>Diversos estilos para todas as suas necessidades</h3>
+        <div class="grid-6">
+          <div class="style-card pink"><span>🛒</span><b>Venda</b><p>Legendas persuasivas que geram conversões.</p></div>
+          <div class="style-card purple"><span>💬</span><b>Engajamento</b><p>Frases que despertam curiosidade e interação.</p></div>
+          <div class="style-card blue"><span>📘</span><b>Educativa</b><p>Compartilhe conhecimento e construa autoridade.</p></div>
+          <div class="style-card orange"><span>❤</span><b>Emocional</b><p>Conecte-se de verdade com seu público.</p></div>
+          <div class="style-card green"><span>🔥</span><b>Viral</b><p>Legendas criativas e fora do comum.</p></div>
+          <div class="style-card indigo"><span>▶</span><b>Reels</b><p>Legendas que complementam e impulsionam seus vídeos.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans" id="planos">
+      <div class="plans-inner">
+        <div class="plans-copy">
+          <span class="eyebrow">Planos que cabem no seu ritmo</span>
+          <p>Comece grátis e evolua quando quiser. Escolha o plano ideal para você.</p>
+        </div>
+        <div class="plan-cards">
+          <div class="plan-card">
+            <h4>Gratuito</h4>
+            <div class="price">R$ 0<small>/mês</small></div>
+            <ul>
+              <li>✓ 3 gerações por dia</li>
+              <li>✓ 1 legenda por geração</li>
+              <li>✓ CTA e hashtags</li>
+            </ul>
+          </div>
+          <div class="plan-card highlight">
+            <span class="badge">Mais popular</span>
+            <h4>Premium</h4>
+            <div class="price">R$ 29,90<small>/mês</small></div>
+            <ul>
+              <li>✓ Gerações ilimitadas</li>
+              <li>✓ 5 opções por geração</li>
+              <li>✓ Legendas para Reels</li>
+              <li>✓ Histórico de legendas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark small"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M13 2 3 14h7l-1 8 11-13h-7l1-7Z" fill="currentColor"/></svg></span>
+        LegendaPro
+      </div>
+      <nav>
+        <a href="#topo">Início</a>
+        <a href="#estilos">Recursos</a>
+        <a href="#planos">Planos</a>
+        <a href="#como-funciona">Como funciona</a>
+      </nav>
+      <p>© 2026 LegendaPro. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
